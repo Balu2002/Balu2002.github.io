@@ -3818,6 +3818,11 @@ label {
 /*--------------------------------------------------------------
   14. Team
 ----------------------------------------------------------------*/
+.my_padding {
+  padding: 5%;
+  /* padding-left: 5%; */
+  text-align: left;
+}
 .cs_team.cs_style_1 {
   max-width: 450px;
   margin-left: auto;
@@ -3827,6 +3832,10 @@ label {
   line-height: 1.35em;
 }
 .cs_team.cs_style_1 .cs_team_info {
+  margin-top: -100px;
+  background-color: #18191d;
+}
+.founder_name {
   margin-top: -100px;
   background-color: #18191d;
 }
