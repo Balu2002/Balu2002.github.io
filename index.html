@@ -363,11 +363,13 @@
                     App</span> Your Path to Growth.</h2>
                 <ul>
                   <li>
-                    <p class="m-0">Welcome to Sir App, your trusted platform for securely saving gold.&nbsp;</p><p>&nbsp;</p>
+                    <p class="m-0">Welcome to Sir App, your trusted platform for securely saving gold.&nbsp;</p>
+                    <p>&nbsp;</p>
                   </li>
                   <li>
                     <p class="m-0">Our app provides a seamless way for you to buy, store, and manage gold, ensuring your
-                      savings are protected and easily accessible.</p><p>&nbsp;</p>
+                      savings are protected and easily accessible.</p>
+                    <p>&nbsp;</p>
                   </li>
                   <!-- <li>
                     <p class="m-0">At Sir App, we prioritize security and transparency, offering competitive rates and
@@ -376,7 +378,8 @@
                   </li> -->
                   <li>
                     <p class="m-0">With a user-friendly interface and exceptional customer support, Sir App makes it
-                      simple for you to grow your gold savings.</p><p>&nbsp;</p>
+                      simple for you to grow your gold savings.</p>
+                    <p>&nbsp;</p>
                   </li>
                   <!-- <li>
                     <p>Whether you're looking to preserve wealth or plan for
@@ -609,10 +612,12 @@
                 <ul>
                   <li>
                     <p class="text-white m-0">
-                      Buy gold instantly at current market rates using a simple and intuitive interface.</p><p>&nbsp;</p>
+                      Buy gold instantly at current market rates using a simple and intuitive interface.</p>
+                    <p>&nbsp;</p>
                   </li>
                   <li>
-                    <p class="text-white m-0">Experience a seamless and efficient process to secure your savings.</p><p>&nbsp;</p>
+                    <p class="text-white m-0">Experience a seamless and efficient process to secure your savings.</p>
+                    <p>&nbsp;</p>
                   </li>
                   <!-- <li>
                     <p class="text-white m-0">Set up recurring deposits to grow your savings steadily over time. Ensure
@@ -863,7 +868,7 @@
                 <h2 class="cs_fs_48 cs_fs_lg_36 cs_mb_20 text-white">Frequently <span class="text-accent">asked</span>
                   Questions</h2>
 
-                <p class="text-white m-0">1. How do I get started with Sir App?<br>
+                <!-- <p class="text-white m-0">1. How do I get started with Sir App?<br>
                   Answer:
                   Getting started with Sir App is simple. Download the app from the App Store or Google Play, create an
                   account by following the registration steps, and verify your identity. Once your account is set up,
@@ -894,11 +899,88 @@
                   Yes, you can sell your gold at any time. Go to the “Sell Gold” section in the app, enter the amount
                   you wish to sell, and complete the transaction. The funds from your sale will be credited to your
                   linked bank account.</p>
-                <p>&nbsp;</p>
+                <p>&nbsp;</p> -->
+                <div class="faq-item text-white m-0">
+                  <p class="faq-question">1. How do I get started with Sir App?<button class="toggle-answer">▽</button>
+                  </p>
+                  <p class="faq-answer">Getting started with Sir App is simple. Download the app from the App Store or
+                    Google Play, create an
+                    account by following the registration steps, and verify your identity. Once your account is set up,
+                    you can start buying and saving gold immediately.</p>
+                </div>
+
+                <div class="faq-item text-white m-0">
+                  <p class="faq-question">2. Is my gold stored securely? <button class="toggle-answer">▽</button></p>
+                  <p class="faq-answer">Yes, your gold is stored in high-security vaults. We partner with trusted storage facilities to ensure
+                    your gold is safe and secure at all times.</p>
+                </div>
+
+                <div class="faq-item text-white m-0">
+                  <p class="faq-question">3. What are the fees for using Sir App? <button class="toggle-answer">▽</button></p>
+                  <p class="faq-answer">Sir App offers transparent pricing with no hidden fees. There are small fees associated with buying,
+                    selling, and storing gold, which are clearly outlined during each transaction.</p>
+                </div>
+
+                <div class="faq-item text-white m-0">
+                  <p class="faq-question">4. How can I buy gold through the app? <button class="toggle-answer">▽</button></p>
+                  <p class="faq-answer">To buy gold, simply log into your Sir App account, navigate to the “Buy Gold” section, enter the
+                    amount you wish to purchase, and complete the transaction using your preferred payment method. Your
+                    gold will be added to your account instantly.</p>
+                </div>
+
+                <div class="faq-item text-white m-0">
+                  <p class="faq-question">5. Can I sell my gold anytime? <button class="toggle-answer">▽</button></p>
+                  <p class="faq-answer">Yes, you can sell your gold at any time. Go to the “Sell Gold” section in the app, enter the amount
+                    you wish to sell, and complete the transaction. The funds from your sale will be credited to your
+                    linked bank account.</p>
+                </div>
 
                 <!-- <p class="text-white m-0">Providing legal advice, contract drafting, compliance assistance, intellectual <br> property protection, and other legal support for businesses. Creating visual <br> content, such as logos, brochures, infographics.</p> -->
               </div>
             </div>
+            <style>
+              .faq-item {
+                margin-bottom: 20px;
+              }
+
+              .faq-question {
+                cursor: pointer;
+              }
+
+              .faq-answer {
+                display: none;
+              }
+
+              .toggle-answer {
+                background: none;
+                border: 1px solid white;
+                border-radius: 15%;
+                cursor: pointer;
+                outline: none;
+                margin-left: 20px;
+              }
+            </style>
+            <script>
+              // Get all the toggle buttons
+              const toggleButtons = document.querySelectorAll('.toggle-answer');
+
+              // Add click event listeners to each toggle button
+              toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                  const faqItem = button.parentNode.parentNode; // Get the parent .faq-item
+                  const answer = faqItem.querySelector('.faq-answer'); // Get the answer element
+
+                  // Toggle the answer visibility
+                  if (answer.style.display === 'none') {
+                    answer.style.display = 'block';
+                    button.textContent = '△'; // Change button text to '-'
+                  } else {
+                    answer.style.display = 'none';
+                    button.textContent = '▽'; // Change button text to '+'
+                  }
+                });
+              });
+            </script>
             <!-- <div class="row">
                 <div class="col-sm-6">
                   <div class="cs_iconbox cs_style_1 d-flex align-items-center cs_mb_40">
@@ -988,8 +1070,8 @@
     </div>
     <div class="cs_iconbox_left-img position-absolute bottom-0 start-0 h-100 background-filled"
       data-src="assets/img/why_choose_us_left_img.jpeg"></div>
-    <div class="cs_iconbox_right-img position-absolute cs_zindex_1 bottom-0 end-0 background-filled"
-      data-src="assets/img/Gold_Network_Resized.png"></div>
+    <!-- <div class="cs_iconbox_right-img position-absolute cs_zindex_1 bottom-0 end-0 background-filled"
+      data-src="assets/img/Gold_Network_Resized.png"></div>-->
     <div class="cs_iconbox_logo position-absolute semi_rotate">
       <svg width="191" height="197" viewBox="0 0 191 197" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
