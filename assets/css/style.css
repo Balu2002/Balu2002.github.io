@@ -3165,7 +3165,7 @@ label {
 11. Popout
 ----------------------------------------------------------------*/
 
-.  {
+.popout {
   animation: popout 1s ease;
   -webkit-animation: popout 1s ease;
 }
