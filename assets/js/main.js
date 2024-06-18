@@ -728,9 +728,11 @@
       const name = document.getElementById('contact-name');
       const email = document.getElementById('contact-email');
       const message = document.getElementById('contact-message');
+      const number = document.getElementById('contact-number');
       const data = {
         "name" : name.value,
         "email" : email.value,
+        "number" : number.value,
         "message" : message.value,
       };
       console.log(data);
@@ -745,6 +747,7 @@
       });
       name.value = '';
       email.value = '';
+      number.value = '';
       message.value = '';
     })
   })
